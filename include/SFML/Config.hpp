@@ -110,6 +110,7 @@
 
 #endif
 
+#define SFML_STATIC
 
 ////////////////////////////////////////////////////////////
 // Define helpers to create portable import / export macros for each module
