@@ -368,3 +368,9 @@ elseif(SFML_OS_ANDROID)
     install(FILES src/SFML/Android.mk DESTINATION .)
 
 endif()
+
+get_directory_property(HAS_PARENT_SCOPE PARENT_DIRECTORY)
+if(HAS_PARENT_SCOPE)
+    set(SFML_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/include PARENT_SCOPE)
+endif()
+
