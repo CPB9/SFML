@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 
+set(BUILD_SHARED_LIBS FALSE)
+
 # define a macro that helps defining an option
 macro(sfml_set_option var default type docstring)
     if(NOT DEFINED ${var})
